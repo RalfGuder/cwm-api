@@ -1,0 +1,7 @@
+/target/
+/.settings/
+/compile idl.bat
+cwm-api.zip
+/doc/
+/.classpath
+/.project
