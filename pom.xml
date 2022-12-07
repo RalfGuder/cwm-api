@@ -11,7 +11,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${version.plugin.compiler}</version>
 				<inherited>true</inherited>
 				<configuration>
 					<source>${code.level}</source>
@@ -44,6 +43,15 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${version.plugin.compiler}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 	<name>Common Warehouse Metamodel</name>
 	<properties>
@@ -51,6 +59,7 @@
 		<version.plugin.compiler>3.5.1</version.plugin.compiler>
 		<version.plugin.javadoc>3.0.1</version.plugin.javadoc>
 		<dl4j.version>1.0.0-beta4</dl4j.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
 		<dependency>
