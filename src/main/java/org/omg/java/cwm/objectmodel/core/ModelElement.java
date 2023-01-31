@@ -6,7 +6,7 @@ package org.omg.java.cwm.objectmodel.core;
 
 
 public interface ModelElement
-extends org.omg.java.cwm.objectmodel.core.Element {
+extends org.omg.java.cwm.objectmodel.core.Element, javax.jmi.reflect.RefObject {
 
 	// ------------------------------------------------
 	// -----   Attribute-Generated                -----
