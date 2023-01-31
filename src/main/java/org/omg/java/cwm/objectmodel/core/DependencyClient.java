@@ -3,9 +3,9 @@
  */
 package org.omg.java.cwm.objectmodel.core;
 
+import javax.jmi.reflect.RefAssociation;
 
-
-public interface DependencyClient{
+public interface DependencyClient extends RefAssociation{
 
   public boolean exists( org.omg.java.cwm.objectmodel.core.ModelElement client, org.omg.java.cwm.objectmodel.core.Dependency clientDependency );
 
