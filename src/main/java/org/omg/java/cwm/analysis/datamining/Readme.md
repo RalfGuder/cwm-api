@@ -75,3 +75,20 @@ the result of a mining build task. The Mining Model metamodel is illustrated abo
 
 Each MiningModel has a signature that defines the characteristics of the data required
 by the model.
+
+This package defines the basic MiningResult object from which all result objects
+inherit as the result of a specific mining task (other than build).
+
+#### Mining Data
+This package defines the objects that describe the input data, the way the input data is
+to be treated, and the mapping between the input data and internal representation for
+which mining algorithms can understand.
+
+PhysicalData effectively references and instance of a class or subclass (e.g., Table, file,
+etc.). This allows JDM to leverage the various row/column format data representation
+expressible in CWM.
+
+Mining Data metaclasses representing the concepts of _physical data_ are illustrated in
+Figure 12-6. Logical data metaclasses are illustrated in Figure 12-7. Attribute
+assignment and attribute usage metaclasses are illustrated in two subsequent diagrams
+(Figure 12-8 and Figure 12-9, respectively)
