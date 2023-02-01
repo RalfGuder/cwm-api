@@ -57,3 +57,21 @@ the next diagram.
 The following subsections describe the content of each component package of the
 MiningCore. This is subsequently followed by subsections describing each of the
 major conceptual area packages.
+
+#### Mining Function Settings
+
+This package defines the objects that contain parameters specific to mining functions.
+The separation of mining functions from mining algorithms enables the user to specify
+the type of the desired result without being concerned with a particular algorithm. The
+Mining Function Settings metamodel is illustrated above.
+
+Mining FunctionSettings (MFS) is the superclass of all other function settings classes.
+An MFS instance references a set of MiningAttributes, aggregated by a LogicalData
+instance. The AttributeUsage set defines how each of the MiningAttributes will be used
+by the Mining Algorithm.
+
+This package defines the basic Mining Model from which all model objects inherit as
+the result of a mining build task. The Mining Model metamodel is illustrated above.
+
+Each MiningModel has a signature that defines the characteristics of the data required
+by the model.
