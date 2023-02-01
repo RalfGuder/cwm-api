@@ -92,3 +92,11 @@ Mining Data metaclasses representing the concepts of _physical data_ are illustr
 Figure 12-6. Logical data metaclasses are illustrated in Figure 12-7. Attribute
 assignment and attribute usage metaclasses are illustrated in two subsequent diagrams
 (Figure 12-8 and Figure 12-9, respectively)
+
+Finally, metaclasses used to model the matrix representation and taxonomy of mining
+data are presented in Figure 12-10, Category Matrix, and Figure 12-11, Category
+Taxonomy, respectively.
+
+Figure 12-6 illustrates those elements of the Mining Data metamodel used to model
+physical data, whereas the following diagram shows those elements facilitating the
+logical modeling of data.
