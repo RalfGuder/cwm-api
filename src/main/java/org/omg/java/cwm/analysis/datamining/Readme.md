@@ -25,3 +25,8 @@ consumption by data mining tools. Also, the advanced query and analytical capabi
 available in most data warehouses (e.g., relational databases, OLAP servers, and
 information visualization tools) can be used to great advantage by data mining tools in
 their formulation of models, and in the evaluation of those models by human users.
+
+### Organization
+#### Dependencies
+The Data Mining package depends on the following package:
+* org.omg:CWM:ObjectModel:Core
