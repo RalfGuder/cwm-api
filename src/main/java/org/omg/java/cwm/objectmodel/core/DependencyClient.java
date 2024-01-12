@@ -3,9 +3,10 @@
  */
 package org.omg.java.cwm.objectmodel.core;
 
-import javax.jmi.reflect.RefAssociation;
-
-public interface DependencyClient extends RefAssociation{
+/**
+ * The DependencyClient association links Dependency instances with ModelElements that act as clients in the represented dependency relationship.
+ */
+public interface DependencyClient{
 
   public boolean exists( org.omg.java.cwm.objectmodel.core.ModelElement client, org.omg.java.cwm.objectmodel.core.Dependency clientDependency );
 

@@ -1,15 +1,8 @@
-/*
- * CWM Version 1.0, Java(TM) Metadata Interface Version 1.0
- */
 package org.omg.java.cwm.objectmodel.core;
 
 
 
-public interface CorePackage{
-
-  public org.omg.java.cwm.objectmodel.core.ElementClass getElement();
-
-  public org.omg.java.cwm.objectmodel.core.ModelElementClass getModelElement();
+public interface CorePackage {
 
   public org.omg.java.cwm.objectmodel.core.NamespaceClass getNamespace();
 
