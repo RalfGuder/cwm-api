@@ -1,37 +1,36 @@
-/*
- * CWM Version 1.0, Java(TM) Metadata Interface Version 1.0
- */
 package org.omg.java.cwm.objectmodel.core;
 
+import java.util.Collection;
 
+/**
+ * A <b>abstract</b> model element is an element that is an abstraction drawn 
+ * from the system being modeled.
+ *
+ * @author Ralf Guder
+ *
+ */
+public interface ModelElement extends Element {
 
-public interface ModelElement
-extends org.omg.java.cwm.objectmodel.core.Element, javax.jmi.reflect.RefObject {
+  public String getName();
 
-	// ------------------------------------------------
-	// -----   Attribute-Generated                -----
-	// ------------------------------------------------
-
-  public java.lang.String getName();
-
-  public void setName( java.lang.String value );
+  public void setName(java.lang.String value);
 
   public org.omg.java.cwm.objectmodel.core.VisibilityKind getVisibility();
 
-  public void setVisibility( org.omg.java.cwm.objectmodel.core.VisibilityKind value );
+  public void setVisibility(org.omg.java.cwm.objectmodel.core.VisibilityKind value);
 
-	// ------------------------------------------------
-	// -----   Reference-Generated                -----
-	// ------------------------------------------------
+  // ------------------------------------------------
+  // ----- Reference-Generated -----
+  // ------------------------------------------------
 
-  public java.util.Collection<? extends org.omg.java.cwm.objectmodel.core.Dependency> getClientDependency();
+  public Collection<? extends Dependency> getClientDependency();
 
-  public java.util.Collection<? extends org.omg.java.cwm.objectmodel.core.Constraint> getConstraint();
+  public Collection<? extends Constraint> getConstraint();
 
-  public java.util.Collection<? extends org.omg.java.cwm.objectmodel.core.Package> getImporter();
+  public Collection<? extends Package> getImporter();
 
   public org.omg.java.cwm.objectmodel.core.Namespace getNamespace();
 
-  public void setNamespace( org.omg.java.cwm.objectmodel.core.Namespace value );
+  public void setNamespace(org.omg.java.cwm.objectmodel.core.Namespace value);
 
 }

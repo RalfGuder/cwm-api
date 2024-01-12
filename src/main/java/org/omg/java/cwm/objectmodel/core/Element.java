@@ -10,6 +10,6 @@ package org.omg.java.cwm.objectmodel.core;
  * an Element is the top metaclass in the metaclass hierarchy. Element is an 
  * <b>abstract</b> metaclass.
  */
-public interface Element extends javax.jmi.reflect.RefObject{
+public interface Element {
 
 }

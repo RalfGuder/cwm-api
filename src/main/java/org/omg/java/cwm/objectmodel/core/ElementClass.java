@@ -3,8 +3,6 @@
  */
 package org.omg.java.cwm.objectmodel.core;
 
-import javax.jmi.reflect.RefClass;
-
-public interface ElementClass extends RefClass{
+public interface ElementClass{
 
 }

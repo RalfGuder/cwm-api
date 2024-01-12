@@ -5,7 +5,7 @@ package org.omg.java.cwm.objectmodel.core;
 
 
 
-public interface CorePackage extends javax.jmi.reflect.RefPackage{
+public interface CorePackage{
 
   public org.omg.java.cwm.objectmodel.core.ElementClass getElement();
 
