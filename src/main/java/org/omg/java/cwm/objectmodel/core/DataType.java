@@ -17,6 +17,8 @@ package org.omg.java.cwm.objectmodel.core;
  * values. A primitive value does not have an identity, so two occurrences of the 
  * same value cannot be differentiated. Usually, DataTypes are used for specification 
  * of the type of an attribute or parameter.
+ * 
+ * <p>A DataType cannot contain any other ModelElements.
  *
  */
 public interface DataType extends Classifier {
