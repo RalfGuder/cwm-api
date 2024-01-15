@@ -1,20 +1,34 @@
-/*
- * CWM Version 1.0, Java(TM) Metadata Interface Version 1.0
- */
 package org.omg.java.cwm.objectmodel.core;
 
 
+/**
+ * The ImportedElements association identifies ModelElements that a Package instance 
+ * imports from other Namespaces. Although any ModelElement may be imported by a 
+ * Package, imported ModelElements are typically other Packages or aggregate
+ * Classifiers, such as Class instances.
+ */
+public interface ImportedElements {
 
-public interface ImportedElements{
+  public boolean exists(ModelElement importedElement, Package importer);
 
-  public boolean exists( org.omg.java.cwm.objectmodel.core.ModelElement importedElement, org.omg.java.cwm.objectmodel.core.Package importer );
+  /**
+   * Identifies the Packages that import a ModelElement.
+   * 
+   * @param importedElement is a {@linkplain ModelElement} instance.
+   * @return A Collection of zero ore more {@linkplain Package} instances.
+   */
+  public java.util.Collection<? extends Package> getImporter(ModelElement importedElement);
 
-  public java.util.Collection<? extends org.omg.java.cwm.objectmodel.core.Package> getImporter( org.omg.java.cwm.objectmodel.core.ModelElement importedElement );
+  /**
+   * Identifies ModelElements imported by a Package.
+   *
+   * @param importer is {@linkplain Package} instance.
+   * @return A Collection of zero ore more {@linkplain ModelElement} instances.
+   */
+  public java.util.Collection<? extends ModelElement> getImportedElement(Package importer);
 
-  public java.util.Collection<? extends org.omg.java.cwm.objectmodel.core.ModelElement> getImportedElement( org.omg.java.cwm.objectmodel.core.Package importer );
+  public boolean add(ModelElement importedElement, Package importer);
 
-  public boolean add( org.omg.java.cwm.objectmodel.core.ModelElement importedElement, org.omg.java.cwm.objectmodel.core.Package importer );
-
-  public boolean remove( org.omg.java.cwm.objectmodel.core.ModelElement importedElement, org.omg.java.cwm.objectmodel.core.Package importer );
+  public boolean remove(ModelElement importedElement, Package importer);
 
 }

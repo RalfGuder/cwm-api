@@ -6,8 +6,6 @@ public interface CorePackage {
 
   public org.omg.java.cwm.objectmodel.core.NamespaceClass getNamespace();
 
-  public org.omg.java.cwm.objectmodel.core.ClassifierClass getClassifier();
-
   public org.omg.java.cwm.objectmodel.core.CoreClassClass getCoreClass();
 
   public org.omg.java.cwm.objectmodel.core.DataTypeClass getDataType();
