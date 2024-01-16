@@ -3,9 +3,7 @@
  */
 package org.omg.java.cwm.objectmodel.core;
 
-import javax.jmi.reflect.RefAssociation;
-
-public interface ElementConstraint extends RefAssociation{
+public interface ElementConstraint{
 
   public boolean exists( org.omg.java.cwm.objectmodel.core.ModelElement constrainedElement, org.omg.java.cwm.objectmodel.core.Constraint constraint );
 

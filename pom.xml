@@ -67,11 +67,4 @@
 		<dl4j.version>1.0.0-beta4</dl4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>javax.jmi</groupId>
-			<artifactId>mof-api</artifactId>
-			<version>1.1</version>
-		</dependency>
-	</dependencies>
 </project>

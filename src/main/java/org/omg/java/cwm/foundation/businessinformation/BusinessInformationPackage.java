@@ -3,7 +3,7 @@
  */
 package org.omg.java.cwm.foundation.businessinformation;
 
-public interface BusinessInformationPackage extends javax.jmi.reflect.RefPackage{
+public interface BusinessInformationPackage{
 
   public org.omg.java.cwm.objectmodel.core.CorePackage getCore();
 

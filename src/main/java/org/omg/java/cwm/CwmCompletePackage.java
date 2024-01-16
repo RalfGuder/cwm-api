@@ -26,7 +26,7 @@ package org.omg.java.cwm;
  *            ...etc...
  */
 
-public interface CwmCompletePackage extends javax.jmi.reflect.RefPackage{
+public interface CwmCompletePackage{
 
   public org.omg.java.cwm.objectmodel.core.CorePackage getCore();
 
