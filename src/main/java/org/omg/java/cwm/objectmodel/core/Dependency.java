@@ -22,17 +22,48 @@ package org.omg.java.cwm.objectmodel.core;
 public interface Dependency extends ModelElement {
 
 
+  /**
+   * Gets the 'kind' property value.
+   *
+   * <p>Contains a description of the nature of the dependency relationship between the client and
+   * supplier. The list of possible values is open-ended. However, CWM predefines the values
+   * "Abstraction" and "Usage".
+	 *
+	 * @return A String instance or <tt>null<tt>.
+   */
+  public String getKind();
 
-  public java.lang.String getKind();
 
-  public void setKind( java.lang.String value );
+  /**
+   * Sets the 'kind' property value.
+   *
+   * <p>Contains a description of the nature of the dependency relationship between the client and
+   * supplier. The list of possible values is open-ended. However, CWM predefines the values
+   * "Abstraction" and "Usage".
+	 *
+	 * 
+   */
+  public void setKind( String value );
 
-	// ------------------------------------------------
-	// -----   Reference-Generated                -----
-	// ------------------------------------------------
+  /**
+   * Gets the 'client' property value.
+   *
+   * <p>The element that is affected by the supplier element. In some cases the direction is
+   * unimportant and serves only to distinguish the two elements.
+	 *
+	 * @return A Collection of one or more {@linkplain ModelElement} instances.
+   */
+  public Collection<? extends ModelElement> getClient();
 
-  public java.util.Collection<? extends org.omg.java.cwm.objectmodel.core.ModelElement> getClient();
-
-  public java.util.Collection<? extends org.omg.java.cwm.objectmodel.core.ModelElement> getSupplier();
+  /**
+	 * Gets the 'supplier' property value.
+	 *
+	 * <p>Inverse of client. Designates the element that is unaffected by a change. In a two-way
+   * relationship this would be the more general element. In an undirected situation the choice of
+   * client and supplier may be irrelevant.	 
+	 *
+	 * @return A Collection of one or more {@linkplain ModelElement} instances.
+	 */
+  public Collection<? extends ModelElement> getSupplier();
 
 }
