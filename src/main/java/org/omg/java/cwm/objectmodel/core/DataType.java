@@ -18,8 +18,7 @@ package org.omg.java.cwm.objectmodel.core;
  * same value cannot be differentiated. Usually, DataTypes are used for specification 
  * of the type of an attribute or parameter.
  * 
- * <p>A DataType cannot contain any other ModelElements.
- *
+ * <p>A DataType cannot contain any other ModelElements. [C-3-2]
  */
 public interface DataType extends Classifier {
 
