@@ -1,12 +1,13 @@
-/*
- * CWM Version 1.0, Java(TM) Metadata Interface Version 1.0
- */
 package org.omg.java.cwm.objectmodel.core;
 
 
-
-public interface Expression
-extends org.omg.java.cwm.objectmodel.core.Element {
+/**
+ * In the metamodel an Expression defines a statement that will evaluate to a (possibly
+ * empty) set of instances when executed in a context. An Expression does not modify the
+ * environment in which it is evaluated. An expression contains an expression string and
+ * the name of an interpretation language with which to evaluate the string.
+ */
+public interface Expression extends Element {
 
 	// ------------------------------------------------
 	// -----   Attribute-Generated                -----
