@@ -30,7 +30,7 @@ public interface Constraint extends ModelElement {
    *
    * @param value is bn {@linkplain BooleanExpression} instance.
    */
-  public void setBody(BooleanExpression value);
+  public void setBody( BooleanExpression value );
 
 
   /**
