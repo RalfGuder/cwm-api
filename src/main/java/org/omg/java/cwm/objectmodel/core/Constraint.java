@@ -21,6 +21,8 @@ import java.util.List;
  * <p>The constraint concept allows new semantics to be specified linguistically for a model
  * element. In the metamodel a Constraint directly attached to a ModelElement describes
  * semantic restrictions that this ModelElement must obey.
+ *
+ * <p>A Constraint cannot be applied to itself. [C-3-1]
  */
 public interface Constraint extends ModelElement {
 
